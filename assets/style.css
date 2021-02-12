@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(163, 159, 159);
+}
+
+.carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.imgWrapper {
+  position: relative;
+  width: 30vw;
+  height: 30vh;
+}
+
+.slideImg {
+  position: absolute;
+  width: inherit;
+  height: inherit;
+  object-fit: cover;
+  overflow: hidden;
+  object-position: center;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.nextNextImage {
+  position: absolute;
+  left: -80%;
+  top: -80%;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.nextImage {
+  position: absolute;
+  left: -40%;
+  top: -40%;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.currentImage {
+  opacity: 1;
+  z-index: 10;
+}
+
+.prevImage {
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  opacity: 0.4;
+  z-index: 2;
+}
+
+.prevPrevImage {
+  position: absolute;
+  left: 80%;
+  top: 80%;
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.controlWrapper {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.btn {
+  margin: 10px;
+  border-radius: 2px;
+  width: 50px;
+  height: 20px;
+}
